@@ -1,4 +1,5 @@
 import streams from "../apis/streams";
+import history from "../history";
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -8,7 +9,6 @@ import {
   DELETE_STREAM,
   EDIT_STREAM
 } from "./types";
-import authReducer from "../reducers/authReducer";
 
 export const signIn = userId => {
   return {
@@ -29,6 +29,7 @@ export const createStream = formvalues => async (dispatch, getState) => {
 
   dispatch({ type: CREATE_STREAM, payload: response.data });
   //some Programmatic navigation to get the user back to root node
+  history.push("/");
 };
 
 export const fetchStreams = () => async dispatch => {
