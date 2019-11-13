@@ -17,15 +17,20 @@
     },
     {
       "title": "I created this stream",
-      "description": "This was made by me!",
-      "userId": "111996507270390973586",
+      "description": "This stream is about refactoring",
       "id": 4
     },
     {
       "title": "programmatic navigation",
-      "description": "You should not see this on the form page!!!",
+      "description": "this change was made by a PATCH request",
       "userId": "111996507270390973586",
       "id": 5
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "Watch me refactor some components",
+      "userId": "111996507270390973586",
+      "id": 6
     }
   ]
 }
